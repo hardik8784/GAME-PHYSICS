@@ -1,0 +1,8 @@
+We can do randomization with rand function from 0 to 22 so the number will be come between this and we will add 3 into it because the minimum requirement to start is 172.8 and maximum is 1440.
+
+int a= (rand() % 23 + 3) * 57.6;
+
+after that we will print the value
+
+cout<<a;
+cout<<endl;

@@ -1,0 +1,12 @@
+Advantages 
+
+objects can be freely created and destroyed without needing to allocate memory or other resources.
+
+Object pooling can offer a significant performance boost in situations where the cost of initializing a class instance is high and the rate of instantiation and destruction of a class is high – in this case objects can frequently be reused with using query to tell if it is currently alive by using the states “in use” term, and each reuse saves a significant amount of time. 
+
+
+Disadvantages
+
+You normally rely on a garbage collector or new and delete to handle memory management for you. By using an object pool, you’re saying, “I know better how these bytes should be handled.” That means the onus is on you to deal with this pattern’s limitations.
+
+The pool may waste memory on unneeded objects
